@@ -1,0 +1,108 @@
+header {
+    width: 1440px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+}
+
+
+.hero {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1440px;
+    height: 948px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: var(--shape-background);
+    background-image: url(./assets/hero-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    
+    & .navegacao-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 56px 160px;
+    
+        & .menu a{
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: var(--pink-dark);
+            font: var(--link);
+        }
+        
+    }
+    
+    & .titulo {
+        display: block;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        margin-block: 164px 32px;
+        max-width: 656px;
+    
+        & h1 {
+    
+            text-align: center;
+        }
+    }
+    
+    & .subtitulo {
+        width: 568px;
+        display: block;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    
+        & p {
+            font: var(--body-lg);
+            color: var(--text-body);
+            text-align: center;
+        }
+    }
+}
+
+.reward {
+    position: relative;
+    width: inherit;
+    height: 576px;
+    background-color: var(--shape-background);
+    padding-block: 96px 80px;
+
+
+    & .reward-in {
+        margin: 210px 152px 158px;
+        font: var(--subtitle);
+        color: var(--text-body);
+
+        & strong {
+
+            color: var(--blue-light);
+        }
+
+        & img {
+            position: absolute;
+        }
+
+        & > img:nth-child(1) {
+            bottom: 50%;
+            right: 50%;
+
+        }
+
+        & > img:nth-child(2) {
+            bottom: 10%;
+        }
+
+        & > img:nth-child(3) {
+            bottom: 10%;
+        }
+    }
+
+}
