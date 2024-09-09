@@ -1,0 +1,39 @@
+.feature {
+    width: inherit;
+    height: 1586px;
+    background-color: var(--shape-background);
+    color: var(--text-body);
+
+    text-align: center;
+
+    & > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    & h2 {
+        font: var(--title-sm);
+    }
+
+    & p {
+        font: var(--body-md);
+        color: var(--text-label);
+        margin-bottom: 88px;
+    }
+
+    & .allbooks {
+        margin-top: 222px;
+        position: relative;
+
+        & img {
+            width: 467px;
+        }
+
+        & .others-book {
+            position: absolute;
+
+        }
+    }
+}
