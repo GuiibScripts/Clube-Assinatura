@@ -1,0 +1,165 @@
+.price {
+    width: inherit;
+    height: 1234px;
+    background: url(./assets/pricing-background.png);
+    background-color: var(--shape-background);
+    
+
+    text-align: center;
+
+    & h2 {
+        font: var(--title-md);
+        color: var(--pink-light);
+    }
+}
+
+.semestral, .mensal, .anual {
+
+    & h2 {
+        font: var(--title-xs);
+    }
+
+    & span {
+        font: var(--tag);
+    }
+
+    & h3 {
+        font: var(--title-md);
+    } 
+
+    & p {
+        font: var(--body-md);
+    }
+
+    & li {
+        font: var(--body-xm);
+        list-style: none;
+    }
+
+    & li img {
+        width: 40px;
+        vertical-align: middle;
+
+    }
+    
+}
+
+
+.list {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    height: 606px;
+    margin-top: 138px;
+
+    & .semestral, .anual, .mensal {
+        position: absolute;
+    }
+}
+
+.semestral, .anual, .mensal {
+
+   
+    height: 416px;
+
+    background-color: var(--shape-stroke);
+    border-radius: 25px;
+    padding: 32px;
+
+    & div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
+    }
+
+    & span {
+        align-self: center;
+        background-color: var(--blue-dark);
+        padding: 0;
+        padding: 10px;
+        border-radius: 15px;
+        align-items: baseline;
+    
+    } 
+
+    & strong {
+        font: var(--body-sm);
+    }
+
+    & ul {
+        padding-bottom: 20px;
+    }
+
+    & a {
+        border-radius: 10px;
+        padding: 10px 50px;
+        font: var(--link);
+        background-color: var(--pink-dark);
+    }
+    & p {
+        margin-bottom: 40px;
+    }
+
+
+
+
+}
+
+.semestral {
+    z-index: 1;
+
+}
+
+.semestral, .anual, .mensal {
+    transition: 1s;
+
+}
+
+
+
+.container-price:hover{
+
+    & .semestral:hover {
+        scale: 1.1;
+        z-index: 1;
+        background-color: var(--blue-dark);
+
+
+    }
+
+    & .mensal {
+        transform: translateX(-300px) translateY(50px) rotate(-15deg);
+        transition: transform 500ms;
+
+        &:hover {
+            scale: 1.1;
+            z-index: 1;
+            background-color: var(--blue-dark);
+
+        }
+
+    }
+
+    & .anual {
+        transform: translateX(300px) translateY(50px) rotate(15deg);
+        transition: transform 500ms;
+
+        &:hover {
+            scale: 1.1;
+            z-index: 1;
+            background-color: var(--blue-dark);
+
+        }
+
+    }
+}
+

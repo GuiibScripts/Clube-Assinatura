@@ -116,7 +116,7 @@
 
     & .text-hidden4 {
 
-        transform: translateX(380px) translatey(450px);
+        transform: translateX(450px) translatey(450px);
         transition: transform 500ms;
 
     }

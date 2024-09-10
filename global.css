@@ -47,6 +47,9 @@
     --tag: bold 10px/normal var(--ff-base);
 }
 
+body {
+    background-color: black;
+}
 
 body::-webkit-scrollbar {
     display: none; /* Esconde a barra de rolagem */
