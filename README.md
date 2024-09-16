@@ -5,7 +5,6 @@
 
 Bem-vindo ao **Clube de Assinaturas Encantos Literários**! Esta aplicação web permite que os usuários assinem um clube de livros e recebam kits mensais com livros e brindes exclusivos.
 
-![Imagem do Projeto](caminho/para/imagem.png)  <!-- Substitua pelo caminho da sua imagem -->
 
 ## Estrutura do Projeto
 
